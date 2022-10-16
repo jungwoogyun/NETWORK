@@ -1,0 +1,13 @@
+disabled 	:BPUD 송수신x ,MAC학습x, 통신 x
+
+blocking 	:BPUD 송신x,수신o ,MAC학습x, 통신 x
+
+listening 	:BPUD 송수신o ,MAC학습x, 통신 x
+
+learning 	:BPUD 송수신o ,MAC학습중, 통신 x
+
+forwarding 	:BPUD 송수신o ,MAC학습완료, 통신 o
+
+Rapid-STP
+Discarding			->learning	->forwarding
+disabled-blocking-listening
